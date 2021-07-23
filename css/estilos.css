@@ -1,0 +1,28 @@
+
+
+/*LAS CLASES SE REPRESENTAN CON UN PUNTO . Y SON EL IDENTIFICADOR QUE TRATAREMOS DE USAR SIEMPRE PARA DAR ESTILOS*/
+
+.background-light{
+    background-color: #A3A1A8;
+    padding: 300px 20px 50px 200px;
+    /* PADDING ES EL MARGEN INTERIOR */
+    margin: 150px;
+    /* MARGIN ES EL ESPACIO EXTERIOR  */
+}
+
+
+/* LAS CLASES PUEDEN SOBREESCRIBIRSE, LA QUE ESTÉ MÁS CERCA DEL FINAL DEL ARCHIVO DE ESTILOS ES LA QUE VA A APLICARSE */
+.font-1{
+    font-family: 'Raleway', sans-serif;
+}
+
+.font-2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/* PODEMOS PONER ESTILOS A ID's PERO TRATAREMOS DE EVITARLO POR BUENA PRÁCTICA */
+#acerca{
+
+}
+

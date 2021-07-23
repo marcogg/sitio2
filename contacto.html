@@ -11,10 +11,11 @@
     <header>
         <nav>
             <ul>
-              <li><a href="index.html#acerca">Acerca de</a></li>
+              <li><a href="index.html#acerca"></a>Acerca de</a></li>
               <li><a href="index.html#proyectos">Proyectos</a></li>
               <li><a href="contacto.html#formulario">Contácatame</a></li>
-              <li><a href="https://www.facebook.com">Sígueme</a></li> 
+              <li><a href="https://www.facebook.com">Sígueme</a></li>
+              <li><a href="galeria.html">Galeria</a></li>
             </ul>
         </nav>
     </header>
@@ -25,9 +26,36 @@
                 <h1>Ponte en contacto</h1>
             </div>
         </section>
+        <!-- BEGIN: FORM -->
         <section id="formulario">
             <h2>Llena el formulario y en breve me comunicaré contigo</h2>
+            <form>
+                <label for="firstname">
+                    <p>Dinos tu nombre</p>
+                    <input type="text" name="firstname" placeholder="Tus nombre(s)" required>
+                </label>
+                <label for="lastname">
+                    <p>Dinos tu apellido</p>
+                    <input type="text" name="lastname" placeholder="Apellido" required>
+                </label>
+                <label for="phone">
+                    <p>Número de teléfono</p>
+                    <input type="tel" name="phone" required>
+                </label>
+                <label for="email">
+                    <p>Tu email</p>
+                    <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+                </label>
+                <label for="appointment">
+                    <p>¿Qué día quieres tu cita?</p>
+                    <input type="date" name="appointment">
+                </label>
+                <label for="submit">
+                    <input type="submit" value="Enviar Información">
+                </label>
+            </form>
         </section>
+        <!-- END:FORM -->
     </main>
 </body>
 </html>
