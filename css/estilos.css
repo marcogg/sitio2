@@ -1,12 +1,50 @@
+/* STRUCTURE */
+/* -FONTS
+-HEADER
+-INDEX
+-FOOTER */
+
+/* ---------------------FONTS--------------------------------- */
+@font-face {
+    font-family:'Rich';
+    /* NO PONER TIPOGRAFIA DE RESPALDO */
+    src: url(../fonts/richard_hamilton/Richard-Hamilton.ttf);
+}
+
+
+/* ------------------------HEADER--------------------- */
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 1.55em;
+    font-family: 'Rich';
+    /* LOS PIXELES PX SON UNIDADES FIJAS, QUE PUEDEN NO FUNCIONAR DEL TODO EN LOS CELULARES */
+
+    /* UNIDADES RELATIVAS: em, rem, vh, vw, % */
+    /* LOS PORCENTAJES LOS VAMOS A USAR MÁS BIEN EN LOS MARGIN Y PADDINGS */
+    /* LAS UNIDADES EM Y REM SE ESPECIALIZAN MÁS EN EL TEXTO */
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color:#A3A1A8;
+}
+
+.link:hover{
+    color: #FAD41B;
+    /* text-shadow: 1px 1px 2px rgba(0,0,0,.25); */
+}
 
 
 /*LAS CLASES SE REPRESENTAN CON UN PUNTO . Y SON EL IDENTIFICADOR QUE TRATAREMOS DE USAR SIEMPRE PARA DAR ESTILOS*/
 
 .background-light{
     background-color: #A3A1A8;
-    padding: 300px 20px 50px 200px;
+    padding: 30px;
     /* PADDING ES EL MARGEN INTERIOR */
-    margin: 150px;
+    margin: -15px;
+    /* PODEMOS ASIGNAR VALORES NEGATIVOS PARA LOGRAR EL EFECTO CONTRARIO */
     /* MARGIN ES EL ESPACIO EXTERIOR  */
 }
 
