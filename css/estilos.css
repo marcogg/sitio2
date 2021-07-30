@@ -1,6 +1,11 @@
 /* STRUCTURE */
-/* -FONTS
+/* 
+-FONTS
+    -TYPOGRAPHY
 -HEADER
+-COMPONENTS
+    -BUTTONS
+    -CARDS
 -INDEX
 -FOOTER */
 
@@ -11,6 +16,14 @@
     src: url(../fonts/richard_hamilton/Richard-Hamilton.ttf);
 }
 
+.text-center{
+    text-align: center;
+}
+
+#acerca h1{
+    font-size: 2rem;
+    color: #474747;
+}
 
 /* ------------------------HEADER--------------------- */
 .menu ul{
@@ -36,6 +49,89 @@
     /* text-shadow: 1px 1px 2px rgba(0,0,0,.25); */
 }
 
+
+/* nombre en formato "CamelCase" */
+.bgImageAcercaDeMi{
+ background-image: url('../img/acerca-de-mi.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-attachment: fixed;
+ margin:auto -15px;
+ padding: 2% 5%;
+
+} 
+
+.table{
+    padding: 2%;
+    border-color: #FAD41B;
+    border-width: 2px;
+    border-radius: 15px;
+    width: 400px;
+    display: table-cell;
+    color: #474747;
+
+}
+
+.table td{
+    padding: 5px;
+}
+
+.table-head{
+    background-color: #FAD41B;
+    font-weight: bolder;
+    padding: 3%;
+}
+
+/* --------------------COMPONENTS----------------------------- */
+    /* --------------------BEGIN: BUTTONS----------------------- */
+    .btn{
+        background-color: #474747;
+        padding: 1% 5%;
+        /* PUEDO DESIGNAR VALORES DE ANCHO Y ALTO SI ASIGNO VALORES DE ESTA MANERA */
+        color: #FAD41B;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-radius: 20px;
+        border-width: 0;
+        margin-top: 5%;
+    }
+
+    /* el estado ":hover" se refiere a cuando el mouse está encima de este elemento */
+    .btn:hover{
+    background-color: #FAD41B;
+    color: #474747;
+    /* La propiedad animación necesita que nombre los "keyframes" con el cambio de estado, la duración, cuánto tiempo va a ocurrir la animación y si queremos un cambio en la aceleración */
+    animation: escalar 1s infinite ease-in-out;
+    }
+
+    @keyframes escalar {
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.2);
+        }
+    }
+
+
+    /* --------------------END: BUTTONS----------------------- */
+
+    /* --------------------BEGIN: CARDS----------------------- */
+
+    .card{
+        width: 500px;
+        padding: 3.5%;
+        margin-top: 5%;
+        background: rgba( 255, 255, 255, 0.55 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 7.0px );
+        -webkit-backdrop-filter: blur( 7.0px );
+        border-radius: 30px;
+        border: 5px solid rgba( 255, 255, 255, 0.18 );
+    }
+    /* --------------------END: CARDS----------------------- */
 
 /*LAS CLASES SE REPRESENTAN CON UN PUNTO . Y SON EL IDENTIFICADOR QUE TRATAREMOS DE USAR SIEMPRE PARA DAR ESTILOS*/
 

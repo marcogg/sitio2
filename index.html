@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet">
 
 </head>
-<body>
+<body class="bgImageAcercaDeMi">
     <!-- BEGIN: HEADER -->
     <header>
         <nav class="menu">
@@ -31,16 +31,14 @@
     <main>
     <!-- BEGIN: CÓNOCEME -->
     <center>
-    <section id="acerca" class="background-light font-1">
+    <section id="acerca" class="font-1">
         <div>
-            <center>
-                <h1>Conóceme</h1>
-            </center>
+            <h1 class="text-center">Conóceme</h1>
         </div>
         <div>
             <!-- BEGIN: GUSTOS -->
-            <table border="1" width="500">
-                <thead bgcolor="#FAD41B">
+            <table class="table">
+                <thead class="table-head">
                     <tr>
                         <td>Música</td>
                         <td>Deportes</td>
@@ -64,15 +62,20 @@
                 </tbody>
             </table>
             <!-- END: GUSTOS -->
+            <div>
+                <button class="btn" onclick="">Ponte en contacto</button>
+                <!-- Esta opción sirve cuando solo queremos un botón que lleve a un vínculo
+                <a class="btn" href="contacto.html">Ponte en contacto</a> -->
+            </div>
         </div>
     </section>
     </center>
     <!-- END: CONÓCEME -->
     <!-- BEGIN: PROYECTOS -->
     <center>
-    <section id="proyectos">
+    <section id="proyectos" class="font-1 card">
         <div>
-            <h2>Esto es lo que hecho</h2>
+            <h2 class="text-center">Esto es lo que hecho</h2>
             <p>Desde páginas web hasta recetas de cocina, mira estas creaciones</p>
             <img src="img/receta-de-guiso-carne.jpg" width="300" alt="Guisado de carne con salsa de tomate y chile serrano">
             <br>
