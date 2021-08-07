@@ -1,5 +1,7 @@
 /* STRUCTURE */
-/* 
+
+
+/*
 -FONTS
     -TYPOGRAPHY
 -HEADER
@@ -7,62 +9,67 @@
     -BUTTONS
     -CARDS
 -INDEX
--FOOTER */
+-FOOTER
+-RESPONSIVENESS
+*/
+
 
 /* ---------------------FONTS--------------------------------- */
+
 @font-face {
-    font-family:'Rich';
+    font-family: 'Rich';
     /* NO PONER TIPOGRAFIA DE RESPALDO */
     src: url(../fonts/richard_hamilton/Richard-Hamilton.ttf);
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-#acerca h1{
+#acerca h1 {
     font-size: 2rem;
     color: #474747;
 }
 
+
 /* ------------------------HEADER--------------------- */
-.menu ul{
+
+.menu ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
     font-size: 1.55em;
     font-family: 'Rich';
     /* LOS PIXELES PX SON UNIDADES FIJAS, QUE PUEDEN NO FUNCIONAR DEL TODO EN LOS CELULARES */
-
     /* UNIDADES RELATIVAS: em, rem, vh, vw, % */
     /* LOS PORCENTAJES LOS VAMOS A USAR MÁS BIEN EN LOS MARGIN Y PADDINGS */
     /* LAS UNIDADES EM Y REM SE ESPECIALIZAN MÁS EN EL TEXTO */
 }
 
-.menu ul li a{
+.menu ul li a {
     text-decoration: none;
-    color:#A3A1A8;
+    color: #A3A1A8;
 }
 
-.link:hover{
+.link:hover {
     color: #FAD41B;
     /* text-shadow: 1px 1px 2px rgba(0,0,0,.25); */
 }
 
 
 /* nombre en formato "CamelCase" */
-.bgImageAcercaDeMi{
- background-image: url('../img/acerca-de-mi.jpg');
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
- background-attachment: fixed;
- margin:auto -15px;
- padding: 2% 5%;
 
-} 
+.bgImageAcercaDeMi {
+    background-image: url('../img/acerca-de-mi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto 0;
+    padding-top: 2%;
+}
 
-.table{
+.table {
     padding: 2%;
     border-color: #FAD41B;
     border-width: 2px;
@@ -70,93 +77,212 @@
     width: 400px;
     display: table-cell;
     color: #474747;
-
 }
 
-.table td{
+.table td {
     padding: 5px;
 }
 
-.table-head{
+.table-head {
     background-color: #FAD41B;
     font-weight: bolder;
     padding: 3%;
 }
 
-/* --------------------COMPONENTS----------------------------- */
-    /* --------------------BEGIN: BUTTONS----------------------- */
-    .btn{
-        background-color: #474747;
-        padding: 1% 5%;
-        /* PUEDO DESIGNAR VALORES DE ANCHO Y ALTO SI ASIGNO VALORES DE ESTA MANERA */
-        color: #FAD41B;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bolder;
-        text-transform: uppercase;
-        border-radius: 20px;
-        border-width: 0;
-        margin-top: 5%;
-    }
 
-    /* el estado ":hover" se refiere a cuando el mouse está encima de este elemento */
-    .btn:hover{
+/* --------------------COMPONENTS----------------------------- */
+
+
+/* --------------------BEGIN: BUTTONS----------------------- */
+
+.btn {
+    background-color: #474747;
+    padding: 1% 5%;
+    /* PUEDO DESIGNAR VALORES DE ANCHO Y ALTO SI ASIGNO VALORES DE ESTA MANERA */
+    color: #FAD41B;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 20px;
+    border-width: 0;
+    margin-top: 5%;
+}
+
+
+/* el estado ":hover" se refiere a cuando el mouse está encima de este elemento */
+
+.btn:hover {
     background-color: #FAD41B;
     color: #474747;
     /* La propiedad animación necesita que nombre los "keyframes" con el cambio de estado, la duración, cuánto tiempo va a ocurrir la animación y si queremos un cambio en la aceleración */
     animation: escalar 1s infinite ease-in-out;
+}
+
+@keyframes escalar {
+    from {
+        transform: scale(1);
     }
-
-    @keyframes escalar {
-        from{
-            transform: scale(1);
-        }
-        to{
-            transform: scale(1.2);
-        }
+    to {
+        transform: scale(1.2);
     }
+}
 
 
-    /* --------------------END: BUTTONS----------------------- */
+/* --------------------END: BUTTONS----------------------- */
 
-    /* --------------------BEGIN: CARDS----------------------- */
 
-    .card{
-        width: 500px;
-        padding: 3.5%;
-        margin-top: 5%;
-        background: rgba( 255, 255, 255, 0.55 );
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-        backdrop-filter: blur( 7.0px );
-        -webkit-backdrop-filter: blur( 7.0px );
-        border-radius: 30px;
-        border: 5px solid rgba( 255, 255, 255, 0.18 );
-    }
-    /* --------------------END: CARDS----------------------- */
+/* --------------------BEGIN: CARDS----------------------- */
+
+.card {
+    width: 50%;
+    padding: 3.5%;
+    margin-top: 5%;
+    background: rgba( 255, 255, 255, 0.55);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 7.0px);
+    -webkit-backdrop-filter: blur( 7.0px);
+    border-radius: 30px;
+    border: 5px solid rgba( 255, 255, 255, 0.18);
+}
+
+
+/* --------------------END: CARDS----------------------- */
+
 
 /*LAS CLASES SE REPRESENTAN CON UN PUNTO . Y SON EL IDENTIFICADOR QUE TRATAREMOS DE USAR SIEMPRE PARA DAR ESTILOS*/
 
-.background-light{
+.background-light {
     background-color: #A3A1A8;
     padding: 30px;
     /* PADDING ES EL MARGEN INTERIOR */
-    margin: -15px;
+    /* margin: -15px; */
     /* PODEMOS ASIGNAR VALORES NEGATIVOS PARA LOGRAR EL EFECTO CONTRARIO */
     /* MARGIN ES EL ESPACIO EXTERIOR  */
 }
 
+footer {
+    background-color: #939598;
+    padding: 30px;
+    margin-top: 10%;
+    font-family: 'Raleway';
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+}
+
 
 /* LAS CLASES PUEDEN SOBREESCRIBIRSE, LA QUE ESTÉ MÁS CERCA DEL FINAL DEL ARCHIVO DE ESTILOS ES LA QUE VA A APLICARSE */
-.font-1{
+
+.font-1 {
     font-family: 'Raleway', sans-serif;
 }
 
-.font-2{
+.font-2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 
 /* PODEMOS PONER ESTILOS A ID's PERO TRATAREMOS DE EVITARLO POR BUENA PRÁCTICA */
-#acerca{
 
+#acerca {}
+
+
+/* ---------------RESPONSIVE----------------- */
+
+.imgResponsive {
+    width: 100%;
 }
 
+
+/* MARGENES PARA VERSIÓN DE ESCRITORIO DE MI SITIO */
+
+@media screen and (min-width:769px) {
+    .marginTopLG3 {
+        margin-top: 3%;
+    }
+    .marginTopLG4 {
+        margin-top: 4%;
+    }
+    .marginTopLG5 {
+        margin-top: 5%;
+    }
+}
+
+
+/* MARGENES PARA VERSION MÓVIL DE MI SITIO */
+
+@media screen and (max-width:768px) {
+    .marginTopSM3 {
+        margin-top: 3%;
+    }
+    .marginTopSM4 {
+        margin-top: 4%;
+    }
+    .marginTopSM5 {
+        margin-top: 5%;
+    }
+}
+
+
+/* EL MEDIA SCREEN ES LA CONSULTA DEL TAMAÑO DEL DISPOSITIVO Y LO QUE ESTÁ ENTRE PARÉNTESIS ES LA REGLA QUE DEBERÁ CUMPLIRSE PARA QUE SE EJECUTE LO QUE ESTÁ DENTRO DE LAS LLAVES */
+
+
+/* ----------------VERSIÓN XS MÓVILES---------------- */
+
+
+/* VERSION MOVIL PARA DISPOSITIVOS XS (EXTRA SMALL) COMO IPHONE 5 */
+
+@media screen and (max-width:320px) {
+    .table {
+        font-size: 0.7rem;
+    }
+    .d-sm-none {
+        display: none;
+    }
+}
+
+
+/* ---------------------VERSION MÓVIL------------------ */
+
+
+/* AQUI ESTAMOS DISEÑANDO PARA MÓVILES Y TABLETS */
+
+@media screen and (max-width:768px) {
+    footer {
+        margin-top: 20%;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .card {
+        width: 80%;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .table {
+        padding: 0;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+    .d-sm-none {
+        display: none;
+    }
+}
+
+
+/* ------------------VERSIÓN DE ESCRITORIO---------------- */
+
+@media screen and (min-width:769px) {
+    .d-lg-none {
+        display: none;
+    }
+    .clipCuadrado {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+}

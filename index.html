@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- HEAD: PONEMOS LOS VÍNCULOS A LOS ARCHIVOS, INLUIDOS LOS ESTILOS (CSS) Y TIPOS DE LETRA -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,91 +15,98 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;800&display=swap" rel="stylesheet">
 
 </head>
+
 <body class="bgImageAcercaDeMi">
     <!-- BEGIN: HEADER -->
     <header>
         <nav class="menu">
             <ul>
-              <li><a class="link" href="index.html#acerca">Acerca de</a></li>
-              <li><a class="link" href="index.html#proyectos">Proyectos</a></li>
-              <li><a class="link" href="contacto.html#formulario">Contácatame</a></li>
-              <li><a class="link" href="https://www.facebook.com">Sígueme</a></li>
-              <li><a class="link" href="galeria.html">Galeria</a></li>
+                <li><a class="link" href="index.html#acerca">Acerca de</a></li>
+                <li><a class="link" href="index.html#proyectos">Proyectos</a></li>
+                <li><a class="link" href="contacto.html#formulario">Contácatame</a></li>
+                <li><a class="link" href="https://www.facebook.com">Sígueme</a></li>
+                <li><a class="link" href="galeria.html">Galeria</a></li>
             </ul>
         </nav>
     </header>
     <!-- END: HEADER -->
     <main>
-    <!-- BEGIN: CÓNOCEME -->
-    <center>
-    <section id="acerca" class="font-1">
-        <div>
-            <h1 class="text-center">Conóceme</h1>
-        </div>
-        <div>
-            <!-- BEGIN: GUSTOS -->
-            <table class="table">
-                <thead class="table-head">
-                    <tr>
-                        <td>Música</td>
-                        <td>Deportes</td>
-                        <td>Intereses</td>
-                        <td><img src="img/icons/hiking.png" width="28">Hobbies</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>House</td>
-                        <td>Futbol</td>
-                        <td>Programación</td>
-                        <td>Tocar guitarra</td>
-                    </tr>
-                    <tr>
-                        <td>Rap</td>
-                        <td>Beisbol</td>
-                        <td>Comer</td>
-                        <td>Viajar</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- END: GUSTOS -->
-            <div>
-                <button class="btn" onclick="">Ponte en contacto</button>
-                <!-- Esta opción sirve cuando solo queremos un botón que lleve a un vínculo
+        <!-- BEGIN: CÓNOCEME -->
+        <center>
+            <section id="acerca" class="font-1">
+                <div>
+                    <h1 class="text-center">Conóceme</h1>
+                </div>
+                <div>
+                    <!-- BEGIN: GUSTOS -->
+                    <table class="table">
+                        <thead class="table-head">
+                            <tr>
+                                <td>Música</td>
+                                <td>Deportes</td>
+                                <td>Intereses</td>
+                                <td><img src="img/icons/hiking.png" width="28">Hobbies</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>House</td>
+                                <td>Futbol</td>
+                                <td>Programación</td>
+                                <td>Tocar guitarra</td>
+                            </tr>
+                            <tr>
+                                <td>Rap</td>
+                                <td>Beisbol</td>
+                                <td>Comer</td>
+                                <td>Viajar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- END: GUSTOS -->
+                    <div>
+                        <button class="btn" onclick="">Ponte en contacto</button>
+                        <!-- Esta opción sirve cuando solo queremos un botón que lleve a un vínculo
                 <a class="btn" href="contacto.html">Ponte en contacto</a> -->
+                    </div>
+                </div>
+            </section>
+        </center>
+        <!-- END: CONÓCEME -->
+        <!-- BEGIN: PROYECTOS -->
+        <center>
+            <section id="proyectos" class="font-1 card">
+                <div>
+                    <h2 class="text-center">Esto es lo que hecho</h2>
+                    <p>Desde páginas web hasta recetas de cocina, mira estas creaciones</p>
+                    <!-- IMAGEN PARA VERSION DESKTOP -->
+                    <img src="img/receta-de-guiso-carne.jpg" class="imgResponsive clipCuadrado d-sm-none" alt="Guisado de carne con salsa de tomate y chile serrano">
+                    <!-- IMAGEN PARA VERSION MOVIL -->
+                    <img src="img/receta-tacos.jpg" class="imgResponsive d-lg-none" alt="Guisado de carne con salsa de tomate y chile serrano">
+                    <!-- LA ETIQUETA BR ES SALTO DE LINEA -->
+                    <br>
+                    <small>Da <b>click</b> para ver la receta</small>
+                    <br>
+                    <img src="img/diseno-web.jpg" class="imgResponsive clipCuadrado marginTopSM5 marginTopLG3" alt="Diseño de sitios web">
+                </div>
+            </section>
+        </center>
+        <!-- END: PROYECTOS -->
+        <!-- BEGIN: FOOTER -->
+        <footer>
+            <div>
+                <!-- Lista ordenada de elementos Ordered List -->
+                <img src="img/icons/usuario.svg" width="40">
+                <ul>
+                    <li>Ubicación: CDMX</li>
+                    <li>Teléfono: <a href="tel:55555555">555 5555 5555</a></li>
+                    <li>Mail: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
+
+                </ul>
             </div>
-        </div>
-    </section>
-    </center>
-    <!-- END: CONÓCEME -->
-    <!-- BEGIN: PROYECTOS -->
-    <center>
-    <section id="proyectos" class="font-1 card">
-        <div>
-            <h2 class="text-center">Esto es lo que hecho</h2>
-            <p>Desde páginas web hasta recetas de cocina, mira estas creaciones</p>
-            <img src="img/receta-de-guiso-carne.jpg" width="300" alt="Guisado de carne con salsa de tomate y chile serrano">
-            <br>
-            <small>Da <b>click</b> para ver la receta</small>
-            <br>
-            <img src="img/diseno-web.jpg" width="300" alt="Diseño de sitios web">
-        </div>
-    </section>
-    </center>
-    <!-- END: PROYECTOS -->
-    <!-- BEGIN: FOOTER -->
-    <footer style="background-color: #939598; padding: 30px;">
-        <div>
-            <!-- Lista ordenada de elementos Ordered List -->
-            <ol style="color: white;">
-               <li>Ubicación: CDMX</li>
-               <li>Teléfono: <a href="tel:55555555">555 5555 5555</a></li>
-               <li>Mail: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></li>
-               <img src="img/balon.webp" width="100">
-            </ol>
-        </div>
-    </footer>
-    <!-- END: FOOTER -->
+        </footer>
+        <!-- END: FOOTER -->
     </main>
 </body>
+
 </html>
