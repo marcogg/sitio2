@@ -16,6 +16,7 @@
 
 </head>
 
+
 <body class="bgImageAcercaDeMi">
     <!-- BEGIN: HEADER -->
     <header>
@@ -29,6 +30,7 @@
             </ul>
         </nav>
     </header>
+
     <!-- END: HEADER -->
     <main>
         <!-- BEGIN: CÓNOCEME -->
@@ -104,9 +106,36 @@
 
                 </ul>
             </div>
+            <p>El resultado de la suma de mis variables es: <span id="suma"></span></p>
         </footer>
         <!-- END: FOOTER -->
     </main>
+    <script>
+        // USAR FORMATO CAMELCASE #estoyAprendiendoJavascript
+        /*ESTE ES UN COMENTARIO
+        DE VARIAS LINEAS EN jAVASCRIPT
+        JEJE*/
+        // ESTE ES CUN COMENTARIO DE UNA SOLA LINEA
+
+        var num1 = 10;
+        const num2 = 5;
+        let num3 = 3;
+
+        var txt1 = "Hola";
+        let txt2 = "chic@s como están";
+        const txt3 = "!";
+        const space = " ";
+
+        let saludo = ["hola", "chi@s", "como", "están"];
+
+        console.log(txt1 + space + txt2 + txt3);
+
+
+
+        var conseguir = document.getElementById("suma");
+        conseguir.innerHTML = num1 + num2;
+    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
