@@ -259,11 +259,11 @@
 
 
         //---------------- EJERCICIO PARA REAFIRMAR LA SENTENCIA "IF"----------------
-        var edadUsuario = 12;
-        var edadRequerida = 15;
+        var edadUsuario = 10;
+        var edadMaxima = 15;
         var edadMinima = 10;
 
-        if (edadUsuario < edadRequerida) {
+        if (edadUsuario <= edadMaxima && edadUsuario >= edadMinima) {
             var traemeMensajeOk = document.getElementById("mensajeOk");
             traemeMensajeOk.style.display = "block";
         } else {
