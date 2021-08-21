@@ -11,6 +11,7 @@
 -INDEX
 -FOOTER
 -RESPONSIVENESS
+-ALERTS
 */
 
 
@@ -285,4 +286,34 @@ footer ul {
         height: 300px;
         object-fit: cover;
     }
+}
+
+
+/* -----------------------ALERTAS-------------------------- */
+
+.mensajeOk {
+    background-color: green;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    padding: 15% 10%;
+    position: absolute;
+    top: 0;
+    z-index: 4;
+}
+
+.mensajeBu {
+    background-color: crimson;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    padding: 15% 10%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+}
+
+.mensajeOk h2,
+.mensajeBu h2 {
+    color: white;
 }
