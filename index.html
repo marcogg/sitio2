@@ -206,12 +206,6 @@
             <p>El resultado de la suma de mis variables es: <span id="suma"></span></p>
         </footer>
         <!-- END: FOOTER -->
-        <div class="mensajeOk" id="mensajeOk">
-            <h2>Puedes pasar a mi fiesta :)</h2>
-        </div>
-        <div class="mensajeBu" id="mensajeBu">
-            <h2>No puedes ir a mi fiesta :(</h2>
-        </div>
     </main>
     <script>
         // USAR FORMATO CAMELCASE #estoyAprendiendoJavascript
@@ -242,34 +236,41 @@
         // ESTAS LINEAS IMPRIMIMEN EL RESULTADO EN LA PÁGINA PARA QUE LAS PERSONAS LO PUEDAN VER
         var conseguir = document.getElementById("suma");
         conseguir.innerHTML = num1 + num2;
+    </script>
+    <script>
+        // ARREGLOS (O EN INGLES ARRAYS), MÉTODOS, POSICIONES Y SUSTITUCIÓN
+        // RECUERDA QUE EN JS LA NUMERACIÓN EMPIEZA CON EL "0"
+        var arreglo = ["Airam", "Olga", "Adrián", "Daniela"];
+        console.log(arreglo[3]);
+        arreglo.push("Marco");
+        console.log(arreglo[4]);
 
+        arreglo[4] = "Dana";
 
-        // ________CONDICIONALES__________
+        // -----BUCLES------
+        // SON CICLOS QUE ENTRE VARIAS DE SUS FUNCIONES NOS AYUDAN A RECORRER UN BLOQUE CÓDIGO SIEMPRE Y CUANDO SE CUMPLA UNA CONDICIÓN
 
-        var numero1 = 5;
-        var numero2 = 51;
+        for (let index = 0; index < arreglo.length; index++) {
+            console.log(arreglo[index]);
 
-        // SI SE SUMPLE LA CONDICIÓN QUE ESTÁ ENTRE PARETESIS "()" VA A PASAR LO QUE YO LE DIGA ENTRE LAS LLAVES "{}"
-
-        // if (numero1 != numero2) {
-        //     // esto pasa si la condición se cumple
-        //     alert("Sí son diferentes! :)");
-        // }
-        //  SI LA CONDICIÓN NO SE CUMPLE, NO PASA NADA, PORQUE NO ESTAMOS UTILIZANDO "ELSE"
-
-
-        //---------------- EJERCICIO PARA REAFIRMAR LA SENTENCIA "IF"----------------
-        var edadUsuario = 10;
-        var edadMaxima = 15;
-        var edadMinima = 10;
-
-        if (edadUsuario <= edadMaxima && edadUsuario >= edadMinima) {
-            var traemeMensajeOk = document.getElementById("mensajeOk");
-            traemeMensajeOk.style.display = "block";
-        } else {
-            var traemeMensajeBu = document.getElementById("mensajeBu");
-            traemeMensajeBu.style.display = "block";
         }
+
+
+        // FUNCIONES----------
+
+        var miNombre = "Marco García";
+        var miEdad = "30";
+        var miUbicacion = "CDMX";
+
+
+        // RETURN SE USA CUANDO QUERRAMOS PROCESAR INFORMACION DIRECTAMENTE
+        // UNA FUNCIÓN GENERALMENTE SE NOMBRE (CON UNO QUE SE MUY DESCRIPTIVO) Y SE OPNE JUSTO ANTES DE LOS PARÁMETROS
+        function saludar(miNombre, miEdad, miUbicacion) {
+            return "Hola mi nombre es " + miNombre + " tengo " + miEdad + " y vivo en " + miUbicacion;
+        }
+
+        // IMPRIMIMOS EN LA CONSOLA Y PASAMOS LOS PARÁMETROS QUE ESTÁN DEFINIDOS COMO VARIABLES ARRIBA
+        console.log(saludar(miNombre, miEdad, miUbicacion));
     </script>
     <!-- JQUERY -->
     <!-- RECUERDEN LLAMAR A ESTA LIBRERIA PORQUE OWL CAROUSEL LA NECESITA -->

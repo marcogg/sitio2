@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Clima API Weather</title>
+</head>
+
+<body>
+    <h2></h2>
+    <p>La temperatura en Navojoa es: <span id="temp"></span> </p>
+</body>
+<script>
+    url = "https://api.openweathermap.org/data/2.5/weather?q=navojoa&appid=7bc099f460d8918ef2a7ba212cdbef36"
+
+    fetch(url).then(function(response) {
+        // AQUI ESTABLECEMOS LO QUE PASA CUANDO LA CONEXION ES CORRECTA
+        return response.json();
+    }).then(function(main) {
+        var getP = document.getElementById("temp");
+        // AQUI PRETENDEMOS IMPIRMIR EN LA PAGIN PERO NOS MARCA INDEFINIDO :(
+        getP.innerHTML = main.temp;
+        console.log(main)
+    })
+</script>
+
+</html>
